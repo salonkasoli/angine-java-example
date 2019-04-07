@@ -1,0 +1,18 @@
+<!DOCTYPE HTML>
+<html>
+ <head>
+  <meta charset="utf-8">
+  <title>Вход</title>
+ </head>
+ <body>
+ <h1>$message</h1>
+  <form method="POST" action="auth">
+   <p>Input your login and password, then press &laquo;Login&raquo;</p>
+   <p><input type="text" name="username" value=""></p>
+   <p><input type="password" name="password" value-""></p>
+   <p><input type="submit" name="submit" value="Login"></p>
+  </form>
+
+  <p><a href="/login">Login</a></p>
+ </body>
+</html>

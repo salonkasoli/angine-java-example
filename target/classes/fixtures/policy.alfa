@@ -1,0 +1,41 @@
+namespace example {
+    export policySet mainPolicy {
+        apply denyUnlessPermit
+        policy getIndex {
+            target clause action == "GET" and entity.path == "/index"
+            apply denyUnlessPermit
+            rule r1 {
+                permit
+            }
+        }
+        policy getSlash {
+            target clause action == "GET" and entity.path == "/"
+            apply denyUnlessPermit
+            rule r1 {
+                permit
+            }
+        }
+        policy postAuth {
+            target clause action == "POST" and entity.path == "/auth"
+            apply denyUnlessPermit
+            rule r1 {
+                permit
+            }
+        }
+        policy getLogin {
+            target clause action == "GET" and entity.path == "/login"
+            apply denyUnlessPermit
+            rule r1 {
+                permit
+            }
+        }
+        policy getAdmin {
+            target clause action == "GET" and entity.path == "/admin"
+            apply denyUnlessPermit
+            rule r1 {
+                permit
+                target clause subject.role == "admin"
+            }
+        }
+    }
+}

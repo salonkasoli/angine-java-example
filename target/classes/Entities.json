@@ -1,0 +1,12 @@
+{
+  "entities": [
+    {"type": "subject", "role": "guest"},
+    {"type": "subject", "role": "user"},
+    {"type": "subject", "role": "admin"},
+    {"type": "urlentity", "path":"/"},
+    {"type": "urlentity", "path": "/index"},
+    {"type": "urlentity", "path": "/login"},
+    {"type": "urlentity", "path": "/auth"},
+    {"type": "urlentity", "path": "/admin"}
+  ]
+}
